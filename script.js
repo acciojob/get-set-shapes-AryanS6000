@@ -12,7 +12,7 @@ class Rectangle {
     return this._height;
   }
 
-  getarea() {
+  getArea() {
     return this._width * this._height;
   }
 }
@@ -22,13 +22,15 @@ class Square extends Rectangle {
     super(side, side);
   }
 
-  getperimeter() {
+  getPerimeter() {
     return 4 * this._width;
+  }
+
+  getArea() {
+    return super.getArea();
   }
 }
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
 window.Square = Square;
-
- 
